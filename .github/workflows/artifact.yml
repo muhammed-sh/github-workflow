@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
-      use: actions/checkout@v2
+      uses: actions/checkout@v2
   
     - name: upload
-      use: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v2
       with:
         name: ${{ env.ARTIFICATE_NAME }}
         path: .
